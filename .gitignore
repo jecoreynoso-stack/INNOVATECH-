@@ -1,54 +1,178 @@
-# http://www.gnu.org/software/automake
 
-Makefile.in
-/ar-lib
-/mdate-sh
-/py-compile
-/test-driver
-/ylwrap
-.deps/
-.dirstamp
+<!doctype html>
 
-# http://www.gnu.org/software/autoconf
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INNOVATECH — Productos tecnológicos</title>
+  <meta name="description" content="INNOVATECH - Audífonos, fundas, relojes digitales, micas y cargadores de carga rápida. Contáctanos por WhatsApp." />
+  <style>
+    :root{
+      --bg:#f7f8fb; /* neutro claro */
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f1724; /* texto oscuro */
+      --tech-1:#2b6cb0; /* azul suave */
+      --tech-2:#94a3b8; /* gris azulado */
+      --glass: rgba(255,255,255,0.6);
+      --radius:14px;
+      --shadow: 0 6px 18px rgba(18,24,40,0.06);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef2f7);color:var(--accent);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:32px auto;padding:16px}header{display:flex;align-items:center;gap:12px}
+.logo{display:flex;flex-direction:column}
+.brand{font-weight:700;font-size:20px;letter-spacing:0.6px}
+.tag{font-size:12px;color:var(--muted)}
 
-autom4te.cache
-/autoscan.log
-/autoscan-*.log
-/aclocal.m4
-/compile
-/config.cache
-/config.guess
-/config.h.in
-/config.log
-/config.status
-/config.sub
-/configure
-/configure.scan
-/depcomp
-/install-sh
-/missing
-/stamp-h1
+.hero{display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:center;margin-top:18px}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
 
-# https://www.gnu.org/software/libtool/
+.hero-left h1{margin:0;font-size:32px}
+.lead{color:var(--muted);margin-top:8px}
+.cta{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--tech-1),var(--tech-2));color:white;text-decoration:none;font-weight:600;margin-top:14px}
 
-/libtool
-/ltmain.sh
-.libs/
+.features{display:flex;gap:10px;margin-top:14px}
+.feature{background:var(--glass);padding:10px;border-radius:10px;font-size:13px;color:var(--muted)}
 
-# http://www.gnu.org/software/texinfo
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.prod{padding:14px;border-radius:12px;background:linear-gradient(180deg,#ffffff, #fbfdff);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px}
+.prod img{width:100%;height:150px;object-fit:cover;border-radius:8px}
+.prod h3{margin:0;font-size:16px}
+.prod p{margin:0;color:var(--muted);font-size:13px}
+.btn{display:inline-block;padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn-wsp{background:linear-gradient(90deg,var(--tech-1),var(--tech-2));color:white}
+.btn-info{border:1px solid #e6eef9;color:var(--tech-1);background:transparent}
 
-/texinfo.tex
+footer{margin-top:28px;padding:16px;text-align:center;color:var(--muted);font-size:13px}
 
-# http://www.gnu.org/software/m4/
+/* WhatsApp floating */
+.wsp-fab{position:fixed;right:18px;bottom:18px;background:#25D366;border-radius:999px;padding:14px;box-shadow:0 8px 26px rgba(37,211,102,0.16)}
+.wsp-fab a{color:white;font-weight:700;text-decoration:none}
 
-m4/libtool.m4
-m4/ltoptions.m4
-m4/ltsugar.m4
-m4/ltversion.m4
-m4/lt~obsolete.m4
+/* responsive */
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .product-grid{grid-template-columns:1fr}
+  .hero-left h1{font-size:26px}
+}
 
-# Generated Makefile
-# (meta build system like autotools,
-# can automatically generate from config.status script
-# (which is called by configure script))
-Makefile
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--tech-1),var(--tech-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:20px">IT</div>
+      <div class="logo">
+        <div class="brand">INNOVATECH</div>
+        <div class="tag">Tecnología juvenil · Accesorios y gadgets</div>
+      </div>
+    </header><section class="hero">
+  <div class="hero-left card">
+    <h1>Accesorios y gadgets que sí te acompañan</h1>
+    <p class="lead">Audífonos, fundas, relojes digitales, micas y cargadores de carga rápida. Productos pensados para jóvenes que buscan diseño y rendimiento sin romper la bolsa.</p>
+
+    <div class="features">
+      <div class="feature">Garantía local</div>
+      <div class="feature">Envíos en tu colonia o a toda la ciudad</div>
+      <div class="feature">Pago por transferencia / efectivo</div>
+    </div>
+
+    <a class="cta" href="https://wa.me/525638698481" target="_blank" rel="noreferrer">📲 Comprar por WhatsApp</a>
+
+    <div style="margin-top:16px;color:var(--muted);font-size:13px">¿Quieres que te avisemos de ofertas? Escribe y te hacemos paquete según lo que busques.</div>
+  </div>
+
+  <aside class="card" style="display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center">
+    <div style="font-weight:700">Contacto rápido</div>
+    <div style="color:var(--muted)">WhatsApp</div>
+    <a class="btn btn-wsp" href="https://wa.me/525638698481" target="_blank" rel="noreferrer">+52 56 3869 8481 — Chatear</a>
+    <div style="width:100%;height:140px;border-radius:10px;overflow:hidden;background:linear-gradient(180deg,#f4f8ff,#ffffff);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;padding:12px;text-align:center">Horario: Lun–Dom · 9:00–20:00<br>Entrega local y envíos</div>
+  </aside>
+</section>
+
+<section>
+  <h2 style="margin-top:22px;margin-bottom:8px">Catálogo</h2>
+  <div class="product-grid">
+
+    <article class="prod">
+      <img src="https://via.placeholder.com/600x400?text=Aud%C3%ADfonos" alt="Audífonos" loading="lazy" />
+      <h3>Audífonos</h3>
+      <p>Modelos inalámbricos y cableados — buena calidad de audio para música y llamadas. Contáctanos para modelos y precios.</p>
+      <div style="display:flex;gap:8px;margin-top:auto">
+        <a class="btn btn-wsp" href="https://wa.me/525638698481" target="_blank" rel="noreferrer">Preguntar por stock</a>
+        <a class="btn btn-info" href="#">Ver más</a>
+      </div>
+    </article>
+
+    <article class="prod">
+      <img src="https://via.placeholder.com/600x400?text=Fundas+para+celular" alt="Fundas para celular" loading="lazy" />
+      <h3>Fundas para celular</h3>
+      <p>Silicón, gel, protector rígido y diseños juveniles. Pide foto del modelo exacto por WhatsApp.</p>
+      <div style="display:flex;gap:8px;margin-top:auto">
+        <a class="btn btn-wsp" href="https://wa.me/525638698481" target="_blank" rel="noreferrer">Pedir fotos</a>
+        <a class="btn btn-info" href="#">Ver más</a>
+      </div>
+    </article>
+
+    <article class="prod">
+      <img src="https://via.placeholder.com/600x400?text=Fundas+para+aud%C3%ADfonos" alt="Fundas para audífonos" loading="lazy" />
+      <h3>Fundas para audífonos</h3>
+      <p>Protege tus estuches con fundas resistentes y de diseño. Disponibilidad limitada.</p>
+      <div style="display:flex;gap:8px;margin-top:auto">
+        <a class="btn btn-wsp" href="https://wa.me/525638698481" target="_blank" rel="noreferrer">Consultar</a>
+        <a class="btn btn-info" href="#">Ver más</a>
+      </div>
+    </article>
+
+    <article class="prod">
+      <img src="https://via.placeholder.com/600x400?text=Relojes+Digitales" alt="Relojes digitales" loading="lazy" />
+      <h3>Relojes digitales</h3>
+      <p>Modelos deportivos y minimalistas — buen diseño a precio justo.</p>
+      <div style="display:flex;gap:8px;margin-top:auto">
+        <a class="btn btn-wsp" href="https://wa.me/525638698481" target="_blank" rel="noreferrer">Ver modelos</a>
+        <a class="btn btn-info" href="#">Ver más</a>
+      </div>
+    </article>
+
+    <article class="prod">
+      <img src="https://via.placeholder.com/600x400?text=Micas" alt="Micas" loading="lazy" />
+      <h3>Micas</h3>
+      <p>Templadas y protectores de pantalla — varios tamaños para distintos modelos.</p>
+      <div style="display:flex;gap:8px;margin-top:auto">
+        <a class="btn btn-wsp" href="https://wa.me/525638698481" target="_blank" rel="noreferrer">Pedir</a>
+        <a class="btn btn-info" href="#">Ver más</a>
+      </div>
+    </article>
+
+    <article class="prod">
+      <img src="https://via.placeholder.com/600x400?text=Cargadores+R%C3%A1pidos" alt="Cargadores carga rápida" loading="lazy" />
+      <h3>Cargadores carga rápida</h3>
+      <p>Adaptadores y cables certificados para carga rápida — pregunta compatibilidad con tu equipo.</p>
+      <div style="display:flex;gap:8px;margin-top:auto">
+        <a class="btn btn-wsp" href="https://wa.me/525638698481" target="_blank" rel="noreferrer">Consultar precio</a>
+        <a class="btn btn-info" href="#">Ver más</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer class="card" style="margin-top:18px">
+  <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+    <div style="font-weight:700">INNOVATECH</div>
+    <div style="color:var(--muted)">¿Listo para comprar? Escríbenos al WhatsApp y armamos tu paquete.</div>
+    <a href="https://wa.me/525638698481" class="btn btn-wsp" target="_blank" rel="noreferrer">+52 56 3869 8481</a>
+  </div>
+  <div style="margin-top:12px;color:var(--muted);font-size:12px">Diseñado por INNOVATECH · Página gratuita (puedes descargar este archivo y publicarlo en GitHub Pages o Netlify).</div>
+</footer>
+
+  </div>  <div class="wsp-fab">
+    <a href="https://wa.me/525638698481" target="_blank" rel="noreferrer">💬</a>
+  </div></body>
+</html>
